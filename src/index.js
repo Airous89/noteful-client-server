@@ -8,6 +8,6 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares)
 server.use(router)
 
-server.listen(5432, () => {
-  console.log('Noteful json-server started at http://localhost:5432')
+server.listen(PORT, () => {
+  console.log('Server listening at http://localhost:${PORT')
 })
